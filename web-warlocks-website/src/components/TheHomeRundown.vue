@@ -31,7 +31,7 @@
 
   <RundownItem>
     <template #icon>
-      <EcosystemIcon />
+      <CommunityIcon />
     </template>
     <template #heading>Contact Us</template>
 
@@ -52,9 +52,6 @@
 import RundownItem from './RundownItem.vue'
 
 import WizardHatIcon from './icons/IconWizard.vue'
-
-import DocumentationIcon from './icons/IconDocumentation.vue'
 import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 </script>
