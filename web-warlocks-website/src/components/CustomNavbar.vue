@@ -39,15 +39,9 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: rgba(255, 87, 34, 0.5);
-}
 
 nav a {
   display: inline-block;

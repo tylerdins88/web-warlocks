@@ -1,7 +1,7 @@
 @import './base.css';
 
 #app {
-  max-width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
@@ -15,9 +15,19 @@ a,
   padding: 3px;
 }
 
-/* @media (hover: hover) {
+a {
+  color: rgb(0, 87, 163);
+}
+
+@media (hover: hover) {
   a:hover {
-    background-color: hsla(49, 96%, 49%, 0.756);
+    background-color: rgba(255, 87, 34, 0.5);
+  }
+  a.router-link-exact-active:hover {
+    background-color: rgba(133, 40, 1, 0.809);
+  }
+  a.router-link-exact-active {
+    color: rgba(255, 196, 0, 0.5);
   }
 }
 
@@ -32,4 +42,4 @@ a,
     padding: 0 2rem;
     place-items: center;
   }
-} */
+}
