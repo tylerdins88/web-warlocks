@@ -1,10 +1,11 @@
 <template>
+  <div class="body">
   <header>
     <img alt="Web Warlock" class="webWarlock" src="@/assets/homephotos/the-web-warlock.jpg" />
 
     <div class="wrapper">
       <div class="greetings">
-        <h1 class="green">Welcome to the Good Stuff.</h1>
+        <h1 class="welcomeMsg">Welcome to the Good Stuff.</h1>
         <h3>
           Your go to coders for apps and websites built with:
           <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
@@ -25,6 +26,7 @@
   </header>
 
   <RouterView />
+</div>
 </template>
 
 <script setup>
@@ -32,6 +34,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <style scoped>
+
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -95,7 +98,7 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   header {
     display: flex;
     place-items: center;
@@ -125,5 +128,5 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
+} */
 </style>
