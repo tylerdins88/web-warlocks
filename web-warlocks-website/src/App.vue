@@ -1,18 +1,25 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="Web Warlock" class="webWarlock" src="@/assets/homephotos/the-web-warlock.jpg" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <div class="greetings">
+        <h1 class="green">Welcome to the Good Stuff.</h1>
+        <h3>
+          Your go to coders for apps and websites built with:
+          <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
+          <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a> or
+          <a href="https://create-react-app.dev/" target="_blank" rel="noopener">React</a> or
+          <a href="https://www.squarespace.com/" target="_blank" rel="noopener">SquareSpace</a>.
+        </h3>
+      </div>
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/projects">Projects</RouterLink>
+        <RouterLink to="/offer">Offerings</RouterLink>
+        <RouterLink to="/contact">Contact</RouterLink>
+        <RouterLink to="/about">About Us</RouterLink>
       </nav>
     </div>
   </header>
@@ -20,15 +27,47 @@ import HelloWorld from './components/HelloWorld.vue'
   <RouterView />
 </template>
 
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+</script>
+
 <style scoped>
 header {
   line-height: 1.5;
   max-height: 100vh;
 }
 
-.logo {
+.webWarlock {
   display: block;
+  width: 200px;
+  height: 200px;
   margin: 0 auto 2rem;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow:
+    0 0 20px 0 rgba(255, 87, 34, 0.7),
+    0 0 40px 0 rgba(255, 87, 34, 0.5),
+    0 0 60px 0 rgba(255, 87, 34, 0.3);
+  transform: scale(1.01);
+  transition:
+    box-shadow 0.3s,
+    transform 0.3s;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2.6rem;
+  position: relative;
+  top: -10px;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.greetings h1,
+.greetings h3 {
+  text-align: center;
 }
 
 nav {
@@ -43,7 +82,7 @@ nav a.router-link-exact-active {
 }
 
 nav a.router-link-exact-active:hover {
-  background-color: transparent;
+  background-color: rgba(255, 87, 34, 0.5);
 }
 
 nav a {
@@ -63,7 +102,7 @@ nav a:first-of-type {
     padding-right: calc(var(--section-gap) / 2);
   }
 
-  .logo {
+  .webWarlock {
     margin: 0 2rem 0 0;
   }
 
@@ -71,6 +110,11 @@ nav a:first-of-type {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
+  }
+
+  .greetings h1,
+  .greetings h3 {
+    text-align: left;
   }
 
   nav {
