@@ -1,35 +1,45 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
 }
 
 a,
-.green {
+.welcomeMsg {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: rgba(255, 87, 34, 0.5);
   transition: 0.4s;
   padding: 3px;
 }
 
+a {
+  color: rgb(0, 87, 163);
+}
+
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: rgba(255, 87, 34, 0.5);
+  }
+  a.router-link-exact-active:hover {
+    background-color: rgba(133, 40, 1, 0.809);
+  }
+  a.router-link-exact-active {
+    color: rgba(255, 196, 0, 0.5);
   }
 }
 
 @media (min-width: 1024px) {
   body {
-    display: flex;
+    max-width: 100%;
     place-items: center;
   }
 
   #app {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
+    place-items: center;
   }
 }
