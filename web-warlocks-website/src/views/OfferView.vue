@@ -1,16 +1,35 @@
 <template>
   <div class="about">
-    <h1>
-      This is a offerings page.
-
-      <br />
-
-      I want this page to be a short review of different things we use. then we create a framework
-      to put them in. the website, what it does (explaining it for none developers), why we chose
-      it, maybe a video explaining it?
-    </h1>
+    <div>
+      <photo-frame :offerings="offerings[0]" v-if="offerings.length > 0"></photo-frame>
+    </div>
   </div>
 </template>
+
+<script>
+import PhotoFrame from '../components/frames/OfferingsFrame.vue'
+
+import Flow from '../assets/offerphotos/flowbite-vue.png'
+
+export default {
+  components: {
+    PhotoFrame
+  },
+  data() {
+    return {
+      offerings: [
+        {
+          title: 'Flowbite Vue 3',
+          description:
+            'One of the most popular open-source library of interactive UI components built with the utility clases from Tailwind CSS.',
+          website: 'https://flowbite-vue.com/',
+          image: Flow
+        }
+      ]
+    }
+  }
+}
+</script>
 
 <style>
 @media (min-width: 1024px) {

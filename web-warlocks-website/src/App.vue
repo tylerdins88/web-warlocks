@@ -4,7 +4,7 @@
 
     <div class="wrapper">
       <div class="greetings">
-        <h1 class="green">Welcome to the Good Stuff.</h1>
+        <h1 class="welcomeMsg">Welcome to the Good Stuff.</h1>
         <h3>
           Your go to coders for apps and websites built with:
           <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
