@@ -1,10 +1,14 @@
 <template>
   <div class="offeringsFrame">
-    <img class="offeringsImage" :src="offerings.image" alt="offerings Image" />
-    <h3 class="offeringsTitle">{{ offerings.title }}</h3>
-    <p class="offeringsDescrip">{{ offerings.description }}</p>
-    <div class="links">
-      <a :href="offerings.website" target="_blank">Read More Here</a>
+    <div class="content">
+      <h3 class="offeringsTitle">{{ offerings.title }}</h3>
+      <p class="offeringsDescrip">{{ offerings.description }}</p>
+      <div class="links">
+        <a :href="offerings.website" target="_blank">Read More Here</a>
+      </div>
+    </div>
+    <div class="imageContainer">
+      <img class="offeringsImage" :src="offerings.image" alt="offerings Image" />
     </div>
   </div>
 </template>
@@ -27,7 +31,8 @@ export default {
   padding: 16px;
   margin-top: 60px;
   text-align: center;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
 }
 
 .offeringsFrame:hover {
@@ -40,12 +45,20 @@ export default {
     transform 0.3s;
 }
 
+.content {
+  flex: 2;
+  padding-right: 20px; /* Adjust spacing between image and content */
+  width: 600px;
+}
+
+.imageContainer {
+  flex: 1;
+}
+
 .offeringsImage {
   display: inline;
   height: 240px;
   width: 240px;
-  border: 1px solid silver;
-  border-radius: 10px;
   margin-top: 12p;
 }
 
@@ -57,11 +70,11 @@ export default {
 
 .offeringsDescrip {
   padding-top: 20px;
-  height: 90px;
 }
 
 .links {
-  margin-top: 10px;
+  margin-top: 20px;
+  text-align: left;
 }
 
 a {
