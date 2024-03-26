@@ -15,10 +15,6 @@ a,
   padding: 3px;
 }
 
-a {
-  color: rgb(0, 87, 163);
-}
-
 @media (hover: hover) {
   a:hover {
     background-color: rgba(255, 87, 34, 0.5);

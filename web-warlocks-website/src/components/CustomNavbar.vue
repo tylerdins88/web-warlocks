@@ -1,4 +1,3 @@
-
 <template>
     <nav>
       <router-link to="/">
@@ -32,7 +31,7 @@
 
 
 
-<style>
+<style scoped>
 
 nav {
   width: 100%;
@@ -41,7 +40,6 @@ nav {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
 
 nav a {
   display: inline-block;
