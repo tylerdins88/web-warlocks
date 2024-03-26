@@ -1,7 +1,8 @@
 <template>
+  <div class="bodywrapper">
   <div class="flex flex-col md:flex-row justify-between items-center">
-    <img alt="Web Warlock" class="webWarlock md:order-1" src="@/assets/homephotos/the-web-warlock.jpg" /> <!-- Move to left on desktop -->
-    <div class="order-2 md:order-2"> <!-- Keep in the same position -->
+    <img alt="Web Warlock" class="webWarlock md:order-1" src="@/assets/homephotos/the-web-warlock.jpg" />
+    <div class="order-2 md:order-2">
       <div class="wrapper">
         <div class="greetings">
           <h1 class="heading">Web Warlocks.</h1>
@@ -17,7 +18,9 @@
       </div>
     </div>
   </div>
+  
   <CustomNavbar class="mt-4 md:mt-0 mx-auto" /> <!-- Centered below -->
+</div>
 </template>
 
 
@@ -28,20 +31,18 @@ import CustomNavbar from './CustomNavbar.vue';
 
 <style scoped>
 
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+
+.bodywrapper {
+ background-image:  linear-gradient(to left, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.65) 100%), 
+ url("@/assets/homephotos/runematrix.jpg");
+ background-size: cover;
+ max-width: 1800px;
 }
 
 .webWarlock {
   display: block;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto 2rem;
+  width: 150px;
+  height: 150px;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
   box-shadow:
@@ -54,22 +55,28 @@ header {
     transform 0.3s;
 }
 
-h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  position: relative;
+.heading {
+  display: flex;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-left: 1em;
   top: -10px;
+  position: relative;
 }
 
 h2 {
-  font-size: 1.2rem;
-  position: relative;
-}
-
-.greetings h1,
-.greetings h2,
-.greetings h5 {
+  display: flex;
+  font-size: 2rem;
   margin-left: 2em;
   position: relative;
 }
+
+h5 {
+  display: block;
+  font-size: 1rem;
+  margin-left: 4.25em;
+  position: relative;
+}
+
+
 </style>
