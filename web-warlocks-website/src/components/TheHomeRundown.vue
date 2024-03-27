@@ -18,7 +18,7 @@
     <template #heading>What We Offer. </template>
 
     <div>
-      we offer projects built with all of the following:
+      We offer projects built with all of the following:
 
       <br />
 
