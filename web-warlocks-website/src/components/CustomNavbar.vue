@@ -21,9 +21,7 @@
 
 <script setup>
   import { useRoute } from 'vue-router';
-  
   const route = useRoute();
-  
   const isActive = (routePath) => {
     return route.path === routePath;
   };
@@ -34,11 +32,12 @@
 <style scoped>
 
 nav {
-  width: 100%;
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  color: #f8f8f8;
+  background-color: #181818; opacity: 85%;
 }
 
 nav a {
@@ -50,5 +49,6 @@ nav a {
 nav a:first-of-type {
   border: 0;
 }
+
 
 </style>

@@ -6,13 +6,13 @@
       <div class="wrapper">
         <div class="greetings">
           <h1 class="heading">Web Warlocks.</h1>
-          <h2 class="welcomeMsg">Welcome to the Good Stuff.</h2>
+          <h2 class="welcomeMsg">Welcome to the Good Stuff</h2>
           <h5>
             Your go-to coders for apps and websites built with:
             <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
             <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a> or
             <a href="https://create-react-app.dev/" target="_blank" rel="noopener">React</a> or
-            <a href="https://www.squarespace.com/" target="_blank" rel="noopener">SquareSpace</a>.
+            <a href="https://www.squarespace.com/" target="_blank" rel="noopener">SquareSpace</a>
           </h5>
         </div>
       </div>
@@ -36,7 +36,8 @@ import CustomNavbar from './CustomNavbar.vue';
  background-image:  linear-gradient(to left, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.65) 100%), 
  url("@/assets/homephotos/runematrix.jpg");
  background-size: cover;
- max-width: 1800px;
+ padding-left: 2em;
+ padding-right: 2em;
 }
 
 .webWarlock {
@@ -62,6 +63,7 @@ import CustomNavbar from './CustomNavbar.vue';
   margin-left: 1em;
   top: -10px;
   position: relative;
+  text-shadow: #181818 5px 2px 3px;
 }
 
 h2 {
@@ -69,6 +71,7 @@ h2 {
   font-size: 2rem;
   margin-left: 2em;
   position: relative;
+  text-shadow: #181818 5px 2px 3px;
 }
 
 h5 {
@@ -76,6 +79,7 @@ h5 {
   font-size: 1rem;
   margin-left: 4.25em;
   position: relative;
+  text-shadow: #181818 10px 2px 5px;
 }
 
 
