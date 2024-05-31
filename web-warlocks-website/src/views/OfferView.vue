@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="offer">
     <div>
       <photo-frame
         v-for="(offering, index) in offerings"
@@ -119,10 +119,11 @@ export default {
 
 <style>
 @media (min-width: 1024px) {
-  .about {
+  .offer {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 }
 </style>
