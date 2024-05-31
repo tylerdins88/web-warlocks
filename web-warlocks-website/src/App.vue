@@ -18,4 +18,8 @@ import MainHeader from './components/MainHeader.vue';
 a {
   color:red;
 }
+
+.body {
+  width: 100%;
+}
 </style>
