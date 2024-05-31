@@ -1,7 +1,7 @@
 <template>
     <nav>
-      <router-link to="/">
-        <a :class="{ 'router-link-exact-active': isActive('/') }">Home</a>
+      <router-link to="/home">
+        <a :class="{ 'router-link-exact-active': isActive('/home') }">Home</a>
       </router-link>
       <router-link to="/projects">
         <a :class="{ 'router-link-exact-active': isActive('/projects') }">Projects</a>
@@ -10,10 +10,13 @@
         <a :class="{ 'router-link-exact-active': isActive('/offer') }">Offerings</a>
       </router-link>
       <router-link to="/contact">
-        <a :class="{ 'router-link-exact-active': isActive('/contact') }">Contact</a>
+        <a :class="{ 'router-link-exact-active': isActive('/contact') }">Contact Us</a>
       </router-link>
       <router-link to="/about">
         <a :class="{ 'router-link-exact-active': isActive('/about') }">About Us</a>
+      </router-link>
+      <router-link to="/blog">
+        <a :class="{ 'router-link-exact-active': isActive('/blog') }">Blog</a>
       </router-link>
     </nav>
 </template>
